@@ -22,3 +22,7 @@ insert into categoria (nome) values ('Off-road');
 insert into categoria (nome) values ('Custom');
 insert into categoria (nome) values ('Street');
 insert into categoria (nome) values ('Touring');
+
+
+insert into capacete (marca, categoria, tamanho, classificacao) values ('Marca1', 'categoria1', 50, 'INFANTIL');
+insert into capacete (marca, categoria, tamanho, classificacao) values ('Marca2', 'categoria2', 58, 'ADULTO');
