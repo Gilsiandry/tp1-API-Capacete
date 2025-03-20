@@ -5,20 +5,5 @@
 -- insert into myentity (id, field) values(3, 'field-3');
 -- alter sequence myentity_seq restart with 4;
 
--- insert into marca (nome, linhaProduto) values ('AGV', 'Fechado');
-
--- insert into marca (nome) values ('Shoei');
--- insert into marca (nome) values ('Arai');
--- insert into marca (nome) values ('X11');
--- insert into marca (nome) values ('AGV');
--- insert into marca (nome) values ('Texx');
--- insert into marca (nome) values ('Shark');
--- insert into marca (nome) values ('Norisk');
--- insert into marca (nome) values ('LS2');
--- insert into marca (nome) values ('Shark');
--- insert into marca (nome) values ('Axxis');
-
-insert into categoria (nome) values ('Off-road');
-insert into categoria (nome) values ('Custom');
-insert into categoria (nome) values ('Street');
-insert into categoria (nome) values ('Touring');
+insert into capacete (marca, categoria, tamanho, classificacao) values ('Marca1', 'categoria1', 50, 'INFANTIL');
+insert into capacete (marca, categoria, tamanho, classificacao) values ('Marca2', 'categoria2', 58, 'ADULTO');

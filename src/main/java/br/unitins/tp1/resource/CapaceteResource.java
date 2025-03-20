@@ -2,9 +2,9 @@ package br.unitins.tp1.resource;
 
 import java.util.List;
 
-import br.unitins.tp1.dto.CategoriaDTO;
-import br.unitins.tp1.dto.CategoriaResponseDTO;
-import br.unitins.tp1.service.CategoriaService;
+import br.unitins.tp1.dto.CapaceteDTO;
+import br.unitins.tp1.dto.CapaceteResponseDTO;
+import br.unitins.tp1.service.CapaceteService;
 import jakarta.inject.Inject;
 import jakarta.transaction.Transactional;
 import jakarta.ws.rs.Consumes;
@@ -16,28 +16,27 @@ import jakarta.ws.rs.Path;
 import jakarta.ws.rs.Produces;
 import jakarta.ws.rs.core.MediaType;
 
-@Path("categorias")
+@Path("capacetes")
 @Produces(MediaType.APPLICATION_JSON)
 @Consumes(MediaType.APPLICATION_JSON)
-public class CategoriaResource {
+public class CapaceteResource {
 
     @Inject
-    CategoriaService service;
+    CapaceteService service;
 
     @GET
-    public List<CategoriaResponseDTO> buscarTodos() { 
+    public List<CapaceteResponseDTO> buscarTodos() { 
         return service.findAll();
     }
 
-
     @POST
-    public CategoriaResponseDTO incluir(CategoriaDTO dto) {
+    public CapaceteResponseDTO incluir(CapaceteDTO dto) {
         return service.create(dto);
     }
 
     @PUT
     @Path("/{id}")
-    public void alterar(Long id, CategoriaDTO dto) {
+    public void alterar(Long id, CapaceteDTO dto) {
         service.update(id, dto);
     }
 
